@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오션중학교 진로 & 코딩 교육 - [선생님 성함]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Pretendard', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at top right, #e0f2fe, transparent),
+                        radial-gradient(circle at bottom left, #f0fdf4, transparent);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <!-- Logo Section with Image -->
+            <div class="flex items-center space-x-3">
+                <img src="./images/logo.png" alt="Ocean Middle School Logo" class="h-8 w-auto" onerror="this.src='https://via.placeholder.com/32?text=O'">
+                <div class="font-bold text-xl text-blue-600">Ocean Middle School</div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-blue-600">홈</a>
+                <a href="#about" class="hover:text-blue-600">선생님 소개</a>
+                <a href="#curriculum" class="hover:text-blue-600">수업 안내</a>
+                <a href="#club" class="hover:text-blue-600">진로 동아리</a>
+            </div>
+            <a href="mailto:contact@email.com" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-blue-700 transition">문의하기</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold text-blue-600 bg-blue-50 rounded-full">
+                꿈을 잇는 코딩, 미래를 여는 진로
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
+                오션중학교 학생들의 <br>
+                <span class="gradient-text">미래 설계를 돕는 파트너</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                진로 탐색부터 마이크로비트를 활용한 실전 코딩까지,<br>
+                아이들이 스스로 생각하고 창조하는 즐거움을 배울 수 있도록 교육합니다.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <div class="flex items-center px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-microchip text-blue-500 mr-3"></i>
+                    <span class="font-medium">마이크로비트</span>
+                </div>
+                <div class="flex items-center px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-brain text-teal-500 mr-3"></i>
+                    <span class="font-medium">AI 교육</span>
+                </div>
+                <div class="flex items-center px-6 py-3 bg-white rounded-2xl shadow-sm border border-gray-100">
+                    <i class="fas fa-compass text-orange-500 mr-3"></i>
+                    <span class="font-medium">진로 상담</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-square bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+                     <img src="https://images.unsplash.com/photo-1544717297-fa154daaf762?q=80&w=2070&auto=format&fit=crop" alt="선생님 이미지" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-8 rounded-2xl hidden md:block">
+                    <p class="text-3xl font-bold">10+</p>
+                    <p class="text-sm opacity-80">교육 경력</p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">안녕하세요, 진로 교사 <br><span class="text-blue-600">[선생님 성함]</span>입니다.</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    변화하는 디지털 대전환 시대, 우리 학생들이 단순히 기술을 소비하는 사람을 넘어 기술을 활용해 문제를 해결하는 주체가 되길 바랍니다. 
+                    오션중학교에서 아이들의 꿈을 발견하고, 그 꿈을 현실로 바꿀 수 있는 논리적 사고력을 길러주고 있습니다.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-1 text-sm font-bold">1</span>
+                        <span>중학교 진로 및 직업 교과 전담 지도</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-1 text-sm font-bold">2</span>
+                        <span>피지컬 컴퓨팅(마이크로비트) 기반 코딩 교육 전문가</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 w-6 h-6 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3 mt-1 text-sm font-bold">3</span>
+                        <span>학생 맞춤형 AI 및 SW 소양 함양 프로그램 운영</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">주요 수업 및 활동</h2>
+                <p class="text-gray-600">오션중학교 학생들과 함께하는 다채로운 배움의 현장입니다.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Class 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">미래 사회 탐구</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        4차 산업혁명과 급변하는 사회 구조를 이해합니다. 마이크로비트를 도구로 활용하여 미래 기술이 우리 삶에 미칠 영향을 직접 시뮬레이션해 봅니다.
+                    </p>
+                </div>
+                <!-- Class 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-teal-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-teal-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">AI 프로젝트</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        인공지능의 원리를 이해하고 머신러닝 모델을 직접 학습시켜보며, 우리 사회의 문제를 AI로 해결하는 방법을 고민합니다.
+                    </p>
+                </div>
+                <!-- Class 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 card-hover">
+                    <div class="w-12 h-12 bg-orange-50 rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">미래 진로 탐색</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        급변하는 직업 세계를 분석하고, 학생 개개인의 강점과 적성을 바탕으로 자기주도적인 생애 설계를 지원합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Section -->
+    <section id="club" class="py-20 px-6 bg-slate-900 text-white rounded-[3rem] mx-6 mb-20 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-extrabold mb-6">진로 동아리 <br><span class="text-blue-400">"Ocean Future Lab"</span></h2>
+                <p class="text-gray-400 mb-8 leading-relaxed">
+                    코딩 기술을 도구 삼아 자신의 진로를 구체화하는 프로젝트 중심 동아리입니다. 
+                    신기술 체험, 직업인 인터뷰, IT 기반 문제 해결 프로젝트를 통해 미래 역량을 강화합니다.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="bg-white/10 p-4 rounded-xl">
+                        <p class="text-blue-400 font-bold text-xl">진로 탐색</p>
+                        <p class="text-xs text-gray-400">적성 기반 프로젝트 설계</p>
+                    </div>
+                    <div class="bg-white/10 p-4 rounded-xl">
+                        <p class="text-blue-400 font-bold text-xl">역량 강화</p>
+                        <p class="text-xs text-gray-400">디지털 소양 및 협업 능력</p>
+                    </div>
+                </div>
+                <!-- Club Buttons -->
+                <div class="flex flex-wrap gap-4 items-center">
+                    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition">
+                        동아리 가입 안내
+                    </a>
+                    <a href="mailto:question@email.com" class="bg-white/20 text-white border border-white/30 px-6 py-3 rounded-xl font-bold hover:bg-white/30 transition">
+                        <i class="far fa-question-circle mr-2"></i>질문하기
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden mt-8">
+                     <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop" alt="동아리 활동 1" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden">
+                     <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" alt="동아리 활동 2" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden mt-[-10%] ml-4">
+                     <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop" alt="동아리 활동 3" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-video bg-gray-800 rounded-2xl overflow-hidden mt-[-20%]">
+                     <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" alt="동아리 활동 4" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        <!-- Decorative bg -->
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-600/20 blur-[100px]"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+            <div class="mb-4 md:mb-0">
+                <p class="font-bold text-gray-900 mb-1">오션중학교 진로교육실</p>
+                <p>© 2024 Career Teacher Portfolio. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-blue-600">Blog</a>
+                <a href="#" class="hover:text-blue-600">Instagram</a>
+                <a href="#" class="hover:text-blue-600">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
